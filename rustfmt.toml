@@ -1,0 +1,8 @@
+unstable_features = true
+max_width = 80
+chain_width = 40
+comment_width = 80
+wrap_comments = true
+edition = "2021"
+fn_params_layout = "Vertical"
+struct_field_align_threshold = 30
