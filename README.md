@@ -15,10 +15,13 @@ then run:
 ```shell
 # download the binary and rename it `covid`
 curl -o covid https://github.com/binnev/covid/releases/download/v0.1.0/covid_macos
+chmod +x covid
 mkdir -p ~/.local/bin # a place for user binaries that doesn't require sudo
 mv covid ~/.local/bin # move the binary there
-# make it so your shell can see the binary from anywhere
-echo export PATH=\"$HOME'/.local/bin:$PATH'\" >> .zshrc  # or whatever your shell config file is
+```
+You'll need to make it so your shell can see the binary from anywhere:
+```shell
+echo export PATH=\"$HOME'/.local/bin:$PATH'\" >> ~/.zshrc  # or whatever your shell config file is
 ```
 
 Type `exit` in all your open terminals, and open a new terminal. You should be able to run `covid` anywhere.
