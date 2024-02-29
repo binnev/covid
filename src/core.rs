@@ -19,7 +19,7 @@ impl Default for Job {
     fn default() -> Self {
         Self {
             filenames:   vec![],
-            num_workers: 1,
+            num_workers: 2,
             format:      "mp4".to_owned(),
             scale:       0.75,
             compression: 23,
