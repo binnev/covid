@@ -14,7 +14,7 @@ brew install ffmpeg
 then run: 
 ```shell
 # download the binary and rename it `covid`
-curl -o covid https://github.com/binnev/covid/releases/download/v0.1.0/covid_macos
+curl -L -o covid https://github.com/binnev/covid/releases/download/v0.1.0/covid_macos
 chmod +x covid
 mkdir -p ~/.local/bin # a place for user binaries that doesn't require sudo
 mv covid ~/.local/bin # move the binary there
